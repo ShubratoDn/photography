@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akib's Photography</title>
+
+    <!-- Vendor CSS -->
+    <!-- normalize -->
+    <link rel="stylesheet" href="vendor/css/normalize.css">
+    <!-- bootstrap 5  -->
+    <link rel="stylesheet" href="vendor/css/bootstrap-grid.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="vendor/fonts/stylesheet.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d01854c510.js" crossorigin="anonymous"></script>
+
+
+    <!-- cutom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <nav class="c-container">
+        <div class="nav-left d-flex align-items-center">
+            <!-- nav logo -->
+            <div class="nav-brand"><img src="assets/img/logo.png" alt="logo" class="logo"></div>
+
+            <!-- search bar -->
+            <form action="" class="search-box">
+                <input type="search" name="search" placeholder="Search..." autocomplete="off">
+                <i class="fa-solid fa-magnifying-glass text-white"></i>
+            </form>
+        </div>
+
+        
+        <div class="nav-right d-flex align-items-center">
+            <!-- nav menus -->
+            <ul class="nav-menus">
+                <li class="nav-item"><a class="nav-link" href="#">home</a></li>
+                <!-- dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#">portfolio</a>
+                    <!-- dropdown content -->
+                    <ul class="nav-menu dropdown-content">
+                        <li class="nav-item"><a href="#" class="nav-link">column 1</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">column 2</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">column 3</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">column 4</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">column 5</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="#">about</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">news</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">contacts</a></li>
+            </ul>
+
+            <!-- nav-more -->
+            <div class="nav-more d-flex align-items-center">
+                <ul id="share-btn" class="share tooltip">
+                    <li class="nav-item">
+                        <div class="toogle-btn nav-btn nav-link">
+                            <i  class="fa-solid fa-bullhorn"></i>
+                        </div>                        
+                    </li>
+                    <!-- tooltip -->
+                    <div class="tooltip-content hvrWhite-clr">
+                        <small>share</small>
+                    </div>
+                </ul>
+                <!-- subscribe button -->
+                <div id="sb-btn" class="sb-nav-btn flex-center">
+                    <div class="sb-btn"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- share box -->
+        <div id="share-box">
+            <ol class="share-container">
+                <li class="nav-item"><a class="nav-link" href="#">01. facebook</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">02. twitter</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">03. Instagram</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">04. github</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">05. pinterest</a></li>
+            </ol>
+        </div>
+
+        <!-- subscribe box -->
+        <div id="sb-box">
+
+            <button id="sb-exit"><i class="fa-solid fa-xmark"></i></button>
+
+            <p class="small-title">
+                subscribe to our newsletter
+            </p>
+
+            <p class="muted-clr mb-4 font-12">Lorem ipsum dolor sit amet consectetur adipisi quasi accusantium.</p>
+
+            <!-- subscribe box starts -->
+            <form action="" class="sb-newsLtr">
+                <input type="email" name="" class="sb-nl-input" placeholder="your email">
+                <input type="submit" name="" class="sb-nl-sub" value="SUBSCRIBE">
+            </form>
+
+            <hr>
+
+            <p class="small-title">
+                We're on social
+            </p>
+
+            <div class="social-icons">
+                <ul>
+                    <li class="si-item"><a class="si-link" href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li class="si-item"><a class="si-link" href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li class="si-item"><a class="si-link" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="si-item"><a class="si-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+
+            <hr>
+
+        </div>
+
+    </nav>
+
+    <!-- Slider land page starts -->
+
+    <section id="landpage">
+        <div class="c-container pe-0">
+            <div class="hero" style="background-image: url('assets/img/hero1.jpg');">
+                
+                <!-- hero info -->
+                <div class="hero-info">
+                    <div class="hero-title">
+                        Green lovers
+                    </div>
+                    <p class="hero-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facilis impedit architecto cupiditate sit consectetur.
+                    </p>
+                    <a href="#" class="hero-btn">Details</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Slider land page Ends -->
+
+
+    <div id="cursor"></div>
+    <!-- Vendor Js -->
+    <script src="vendor/js/bootstrap.bundle.js"></script>
+
+    <!-- custom js -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
