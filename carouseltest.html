@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="vendor/css/owl.carousel.css">
+    <link rel="stylesheet" href="vendor/css/owl.theme.default.css">
+
+    <style>
+        html,
+        body{
+        height: 100%;
+        }
+        .aligner {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="aligner">
+        <div class="container">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+              <a href="https://placehold.it/200x200" data-lightbox="gallery">
+                <img src="assets/img/hero1.jpg" alt="">
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://placehold.it/200x200" data-lightbox="gallery">
+                <img src="assets/img/hero1.jpg" alt="">
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://placehold.it/300x300" data-lightbox="gallery">
+                <img src="assets/img/hero1.jpg" alt="">
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://placehold.it/400x400" data-lightbox="gallery">
+                <img src="assets/img/hero1.jpg" alt="">
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://placehold.it/500x500" data-lightbox="gallery">
+                <img src="assets/img/hero1.jpg" alt="">
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://placehold.it/600x600" data-lightbox="gallery">
+                <img src="assets/img/hero1.jpg" alt="">
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://placehold.it/700x700" data-lightbox="gallery">
+                <img src="assets/img/hero1.jpg" alt="">
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://placehold.it/800x800" data-lightbox="gallery">
+                <img src="assets/img/hero1.jpg" alt="">
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://placehold.it/900x900" data-lightbox="gallery">
+                <img src="assets/img/hero1.jpg" alt="">
+              </a>
+            </div>
+            <div class="item">
+              <a href="https://placehold.it/1000x1000" data-lightbox="gallery">
+                <img src="assets/img/hero1.jpg" alt="">
+              </a>
+            </div>
+            
+          </div>
+        </div>
+        </div>
+
+
+    <!-- Vendor Js -->
+    <script src="vendor/js/jquery.min.js"></script>
+    <script src="vendor/js/bootstrap.bundle.js"></script>
+    <!-- owl carousel -->
+    <script src="vendor/js/owl.carousel.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    startPosition: 2,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+    </script>
+
+</body>
+</html>

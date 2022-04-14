@@ -1,0 +1,50 @@
+    <section id="landpage">
+        <div class="c-container pe-0">
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="hero" style="background-image: url('assets/img/hero1.jpg');">
+                        <!-- hero info -->
+                        <div class="hero-info">
+                            <div class="hero-title">
+                                Green lovers
+                            </div>
+                            <p class="hero-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facilis impedit architecto cupiditate sit consectetur.
+                            </p>
+                            <a href="#" class="hero-btn">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="hero" style="background-image: url('assets/img/hero2.jpg');">
+                        <!-- hero info -->
+                        <div class="hero-info">
+                            <div class="hero-title">
+                               MachRanga
+                            </div>
+                            <p class="hero-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facilis impedit architecto cupiditate sit consectetur.
+                            </p>
+                            <a href="#" class="hero-btn">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="hero" style="background-image: url('assets/img/hero3.jpg');">
+                        <!-- hero info -->
+                        <div class="hero-info">
+                            <div class="hero-title">
+                               Rural Area
+                            </div>
+                            <p class="hero-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni facilis impedit architecto cupiditate sit consectetur.
+                            </p>
+                            <a href="#" class="hero-btn">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>

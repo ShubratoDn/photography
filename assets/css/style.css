@@ -22,6 +22,7 @@ body{
     background-color: var(--dark);
     width: 100vw;
     overflow-x: hidden;
+    height: 100vh;
 }
 
 /* custom cursor decoration */
@@ -474,6 +475,7 @@ ul{
     background-size: cover;
     position: relative;
     cursor: grab;
+    overflow: hidden;
 }
 .hero:active{
     cursor: grabbing;
@@ -486,18 +488,28 @@ ul{
     width: 100%;
     top: 0;
     left: 0;
-    background-color: rgba(45,45,50,0.3);
+    background-color: rgba(45,45,50,0.4);
     /* pointer-events: none; */
 }
 
 .hero-info{
     position: absolute;
-    top: 60%;
-    left: 10%;
+    top: 50%;
+    left: 13%;
     /* background-color: white; */
     width: 40%;
     z-index: 10;
+    
 }
+.hero-info::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 70px;
+    background-color: var(--white);
+    top: -18%;
+}
+
 
 .hero-title{
     color: white;
@@ -506,12 +518,12 @@ ul{
     font-weight: bold;
     letter-spacing: 4px;
     word-spacing: 8px;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .hero-text{
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .hero-btn{
@@ -519,6 +531,155 @@ ul{
     text-decoration: none;
     display: block;
     text-transform: uppercase;
-    background: black;
+    background-color: black;
     width: fit-content;
+    padding: 15px 25px;
+    font-size: 10px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: .5s;
+}
+
+.hero-btn::after{
+    content: "-";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 70%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    z-index: -1;
+    transition: .6s;
+    /* transform: translateY(101%); */
+}
+
+.hero-btn:hover:after{
+    transform: translateX(40%);
+}
+
+
+/* owl carousel design */
+/* .hero-title{
+    transition: 5s;
+    transform: translateY(-100px);
+    opacity: 0;
+} */
+
+/* .owl-item.active .item .hero-title{
+    transition: 1s;
+    opacity: 1;
+    transform: translateY(0);
+} */
+
+.owl-nav button{
+    color: var(--white) !important;
+    position: absolute;
+    bottom: 10%;
+    font-size: 13px !important;
+    transition: .5s;
+}
+.owl-nav button:hover{
+    background-color: var(--dark2) !important;
+}
+
+
+.owl-carousel .owl-nav button.owl-prev{
+    left: 46%;
+    padding: 10px !important;
+}
+.owl-carousel .owl-nav button.owl-next{
+    right: 46%;
+    padding: 10px !important;
+}
+
+
+/* Hero fixed section starts */
+.scroll-div{
+    position: absolute;
+    bottom: 5%;
+    left: 16%;
+    z-index: 10;
+    letter-spacing: .2px;
+    text-transform: uppercase;
+    color: var(--white);
+    font-size: 11px;
+    word-spacing: 2px;
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.scroll-icon{
+    height: 30px;
+    width: 20px;
+    border: 1px solid var(--white);
+    margin-right: 10px;
+    border-radius: 4px;
+    position: relative;
+}
+.scroll-icon::after{
+    content: "";
+    height: 6px;
+    width: 2px;
+    background: var(--gray);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10%;
+    z-index: 15;
+    animation-name: scrlAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scrlAnim {
+    0%{
+        top: 30%;
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        top: 70%;
+        opacity: 0;
+    }
+}
+
+
+/* fixed info div*/
+.fixed-info{
+    width: 40%;
+    height: 25%;
+    position: absolute;
+    background-color: #272729;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.fixed-info::after{
+    content: "";
+    position: absolute;
+    width: 13%;
+    height: 100%;
+    background-color: #212121;
+    display: block;
+    right: 0;
+}
+
+
+/* Hero image info */
+.hero-img-info{
+    position: fixed;
+    z-index: 15 !important;
+    color: white;
+    bottom: 0;
+    left: 55%;
 }

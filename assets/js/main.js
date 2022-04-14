@@ -67,3 +67,43 @@ sbExit.addEventListener('click', function(){
     sbBox.classList.toggle("active");
 });
 
+
+
+/*******************************/
+// LandPage Carousel
+/*******************************/
+var carousel = $('#landpage .owl-carousel');
+var prevIcon = '<i class="fa-solid fa-angle-left"></i>';
+var nextIcon = '<i class="fa-solid fa-angle-right"></i>';
+
+carousel.owlCarousel({
+    autoplay:false,
+    autoplayTimeout:5000,
+    loop:true,
+    margin:10,
+    nav:true,
+    dots:false,
+    lazyLoad: true,
+    navText:[
+        prevIcon,
+        nextIcon
+    ],
+    responsive:{
+        0:{
+            items:1
+        }
+    }
+})
+
+// carousel.on('mousewheel', '.owl-stage', function (e) {
+//     if (e.deltaY>0) {
+//         owl.trigger('next.owl');
+//     } else {
+//         owl.trigger('prev.owl');
+//     }
+//     e.preventDefault();
+// });
+
+// eta use korle mousewheel event kaj kore
+
+// =================================
